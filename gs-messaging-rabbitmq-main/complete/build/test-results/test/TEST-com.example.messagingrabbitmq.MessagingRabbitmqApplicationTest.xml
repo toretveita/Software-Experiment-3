@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.messagingrabbitmq.MessagingRabbitmqApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-30T12:16:06" hostname="T" time="0.041">
+  <properties/>
+  <testcase name="test()" classname="com.example.messagingrabbitmq.MessagingRabbitmqApplicationTest" time="0.041"/>
+  <system-out><![CDATA[14:16:03.084 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.messagingrabbitmq.MessagingRabbitmqApplicationTest]: MessagingRabbitmqApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:16:03.198 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.messagingrabbitmq.MessagingRabbitmqApplication for test class com.example.messagingrabbitmq.MessagingRabbitmqApplicationTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-09-30T14:16:03.616+02:00  INFO 22532 --- [    Test worker] c.e.m.MessagingRabbitmqApplicationTest   : Starting MessagingRabbitmqApplicationTest using Java 21.0.4 with PID 22532 (started by toret in C:\Users\toret\OneDrive\Desktop\gs-messaging-rabbitmq-main\complete)
+2024-09-30T14:16:03.618+02:00  INFO 22532 --- [    Test worker] c.e.m.MessagingRabbitmqApplicationTest   : No active profile set, falling back to 1 default profile: "default"
+2024-09-30T14:16:05.793+02:00  INFO 22532 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-09-30T14:16:05.884+02:00  INFO 22532 --- [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#25ce435:0/SimpleConnection@10bf1ec9 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56652]
+2024-09-30T14:16:05.892+02:00  INFO 22532 --- [    Test worker] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring-boot) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2024-09-30T14:16:05.991+02:00  INFO 22532 --- [    Test worker] c.e.m.MessagingRabbitmqApplicationTest   : Started MessagingRabbitmqApplicationTest in 2.58 seconds (process running for 3.8)
+Received <Hello from RabbitMQ!>
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\toret\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.16\4a451ee6484abac3a498df0f3b33ed00a6fced4d\byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

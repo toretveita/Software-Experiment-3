@@ -20,7 +20,7 @@ The screenshot shows the tables in DBeaver after running the persistance.
 Part 2:
 
 Pulled the gradle and temurin image and created the following dockerfile in the expass3 project folder:
-
+...
 FROM gradle:7.6-jdk17 AS build
 WORKDIR /app
 COPY gradlew gradlew
@@ -34,7 +34,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
-
+...
 
 After building the application successfully runs:
 
